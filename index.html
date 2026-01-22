@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Leads Pro Digital – Coming Soon</title>
+
+  <meta name="description" content="Leads Pro Digital is a performance-driven marketing agency specializing in lead generation, paid ads, email marketing, and social growth. Coming soon.">
+
+  <style>
+    :root {
+      --primary: #00c2ff;
+      --dark: #0b0f19;
+      --light: #ffffff;
+      --muted: #9aa4b2;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: radial-gradient(circle at top, #111827, #020617);
+      color: var(--light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      width: 100%;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 6px 14px;
+      border-radius: 999px;
+      background: rgba(0, 194, 255, 0.15);
+      color: var(--primary);
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: clamp(36px, 6vw, 64px);
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    h1 span {
+      color: var(--primary);
+    }
+
+    h2 {
+      font-size: clamp(18px, 3vw, 22px);
+      color: var(--muted);
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+
+    .countdown {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+    }
+
+    .time-box {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 14px;
+      padding: 16px 20px;
+      min-width: 110px;
+      overflow: hidden;
+    }
+
+    .number {
+      font-size: 36px;
+      font-weight: 800;
+      color: var(--primary);
+      display: inline-block;
+      transition: transform 0.4s ease, opacity 0.4s ease;
+    }
+
+    .number.flip {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+
+    .label {
+      font-size: 13px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-bottom: 40px;
+    }
+
+    .service {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 14px;
+      padding: 18px;
+      font-size: 16px;
+      font-weight: 500;
+      transition: transform 0.2s ease, background 0.2s ease;
+    }
+
+    .service:hover {
+      transform: translateY(-4px);
+      background: rgba(0, 194, 255, 0.08);
+    }
+
+    .cta p {
+      color: var(--muted);
+      margin-bottom: 12px;
+    }
+
+    .cta a {
+      display: inline-block;
+      padding: 14px 28px;
+      border-radius: 12px;
+      background: var(--primary);
+      color: #001018;
+      font-weight: 700;
+      text-decoration: none;
+      transition: transform 0.2s ease;
+    }
+
+    .cta a:hover {
+      transform: translateY(-2px);
+    }
+
+    footer {
+      margin-top: 50px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    footer span {
+      color: var(--primary);
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="badge">🚀 Coming Soon</div>
+
+    <h1>Leads Pro <span>Digital</span></h1>
+
+    <h2>
+      A results-driven marketing agency focused on growth, performance, and real ROI.
+      We help businesses scale with powerful digital strategies.
+    </h2>
+
+    <!-- COUNTDOWN -->
+    <div class="countdown">
+      <div class="time-box">
+        <div id="days" class="number">00</div>
+        <div class="label">Days</div>
+      </div>
+      <div class="time-box">
+        <div id="hours" class="number">00</div>
+        <div class="label">Hours</div>
+      </div>
+      <div class="time-box">
+        <div id="minutes" class="number">00</div>
+        <div class="label">Minutes</div>
+      </div>
+      <div class="time-box">
+        <div id="seconds" class="number">00</div>
+        <div class="label">Seconds</div>
+      </div>
+    </div>
+
+    <div class="services">
+      <div class="service">🎯 Lead Generation</div>
+      <div class="service">📢 Google, Facebook & Bing Ads</div>
+      <div class="service">📧 Email Marketing</div>
+      <div class="service">📱 Social Media Marketing</div>
+      <div class="service">⭐ Reviews & Reputation Management</div>
+      <div class="service">💻 Website Building & Seo</div>
+    </div>
+
+    <div class="cta">
+      <p>Want to work with us before launch?</p>
+      <a href="mailto:Raza@leadsprodigital.com">Raza@leadsprodigital.com</a>
+    </div>
+
+    <footer>
+      © 2026 <span>Leads Pro Digital</span> · www.leadsprodigital.com
+    </footer>
+  </div>
+
+  <script>
+    const launchDate = new Date("2026-02-01T00:00:00").getTime();
+    const lastValues = {};
+
+    function updateFlip(id, value) {
+      const el = document.getElementById(id);
+      const formatted = value.toString().padStart(2, "0");
+
+      if (lastValues[id] === formatted) return; // only update on change
+      lastValues[id] = formatted;
+
+      el.classList.add("flip");
+      setTimeout(() => {
+        el.textContent = formatted;
+        el.classList.remove("flip");
+      }, 200);
+    }
+
+    function updateCountdown() {
+      const now = Date.now();
+      const distance = launchDate - now;
+
+      if (distance <= 0) return;
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance / (1000 * 60 * 60)) % 24);
+      const minutes = Math.floor((distance / (1000 * 60)) % 60);
+      const seconds = Math.floor((distance / 1000) % 60);
+
+      updateFlip("days", days);
+      updateFlip("hours", hours);
+      updateFlip("minutes", minutes);
+      updateFlip("seconds", seconds);
+    }
+
+    setInterval(updateCountdown, 1000);
+    updateCountdown(); // initial call
+  </script>
+
+</body>
+</html>
